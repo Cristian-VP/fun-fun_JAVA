@@ -1,10 +1,10 @@
 # Aprende Java con Ejercicios
 
-¡Bienvenido al repositorio de ejercicios del manual práctico "Aprende Java con Ejercicios"! Este repositorio está diseñado para acompañar el aprendizaje de Java desde cero, proporcionando ejercicios prácticos que te ayudarán a consolidar tus conocimientos.
+¡Bienvenido al repositorio de ejercicios del manual práctico "Aprende Java con Ejercicios"!
 
 ## Descripción
 
-Este manual práctico es perfecto para quienes desean aprender Java de manera efectiva y progresiva. A través de una serie de ejercicios, podrás poner en práctica lo aprendido y desarrollar tus habilidades de programación.
+Este manual práctico es perfecto para quienes desean aprender Java de manera efectiva y progresiva. A través de una serie de ejercicios, pondré en práctica lo aprendido.
 
 ### Contenido del Repositorio
 
