@@ -13,10 +13,17 @@ class Scratch {
         return euros/valorPeseta;
     }
 
+    static int conversorMbKb(int numero ){
+        return numero * 1024;
+    }
+    static int conversorKbMb(int numero ){
+        return numero / 1024;
+    }
+
     public static void main(String[] args) {
         /*
-         Escribe un programa que calcule el total de una factura a partir de la base
-imponible.
+         Escribe un programa que calcule el salario semanal de un empleado en base a
+las horas trabajadas, a razón de 12 euros la hora.
          */
         Scanner s = new Scanner(System.in);
         //Definir los decimales que va a tener mi float o double
@@ -56,6 +63,35 @@ imponible.
         float cobroTrabajo1 = s.nextFloat();
         final float iva = 1.21F;
         System.out.println("Resultado de factura: "+formatoDecimales.format(cobroTrabajo1/iva));
+
+        System.out.println("Ingrese la cantidad de horas trabajadas:");
+        final float precioHora = 12;
+        float horasTrabajadas = s.nextFloat();
+        System.out.printf("Tu salario a 12 €/h es: %.2f €\n", precioHora*horasTrabajadas );
+
+        //Ejercicio-9-Volumen cono
+        System.out.println("Ingrese la altura y radio del cono par calcular su volumen:");
+        float altura = s.nextFloat();
+        float radio = s.nextFloat();
+        double pi = Math.PI;
+        float  tercio = (float) 1/3;
+        System.out.printf("El volumen del cono es: %.2f\n",tercio*(pi*(Math.pow(radio,2)*altura)));
+
+        //Ejercicio-10 & 11-Mb a Kb
+        System.out.println("Introduce primero los Mb a convertir a Kb, posteriormente los kb a convertir a Mb: ");
+        int mb = s.nextInt();
+        int kb = s.nextInt();
+        System.out.printf("Tienes kb:%d \n",conversorMbKb(mb));
+        System.out.printf("Tienes Mb:%d \n",conversorKbMb(kb));
+
+        //Ejercicio 12
+
+        System.out.print("Cual fue tu nota del primer examen");
+        float notaUno = s.nextFloat();
+        System.out.print("Que media quieres obtener");
+        float media = s.nextFloat();
+        double notaDos = (media-(notaUno*0.4))/0.6;
+        System.out.printf("Tienes que sacar %.2f para alcanzar tu media", notaDos);
 
     }
 }
